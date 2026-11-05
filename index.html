@@ -71,7 +71,7 @@ header.nav.scrolled{border-color:var(--line)}
 @media (max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:48px}.hero-card{border-left:0;border-top:1px solid var(--line);padding:28px 0 0}}
 
 /* problem */
-.problem{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.problem{background:var(--bg);border-bottom:1px solid var(--line)}
 .problem .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px}
 .problem p{color:var(--muted);margin-bottom:18px}
 .problem p strong{color:var(--ink);font-weight:500}
@@ -190,7 +190,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media (max-width:900px){.addon-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.addon-grid{grid-template-columns:1fr}}
 .about .wrap{align-items:start}
-.brands{font-family:var(--serif);font-size:21px;line-height:1.5;color:var(--ink)!important}
+/* brand strip */
+.brandstrip{padding:56px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface);text-align:center}
+.brandstrip .eyebrow{margin-bottom:28px}
+.brandlist{list-style:none;display:flex;justify-content:center;flex-wrap:wrap;align-items:center;gap:14px 56px;max-width:1000px;margin:0 auto}
+.brandlist li{font-family:var(--serif);font-size:clamp(19px,2vw,24px);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);line-height:1.3}
+@media (max-width:600px){.brandstrip{padding:44px 0}.brandlist{flex-direction:column;gap:0}.brandlist li{padding:12px 0;width:100%;max-width:280px}.brandlist li + li{border-top:1px solid var(--line)}}
 </style>
 </head>
 <body>
@@ -221,8 +226,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     </div>
     <aside class="hero-card">
       <p class="big">A former store director, now in your corner.</p>
-      <p class="small">Brunello Cucinelli · Celine · Sandro and Maje · Canada Goose · Club Monaco</p>
+      <p class="small">Visual merchandising · Buying · Clienteling · Teams · VIP experiences</p>
     </aside>
+  </div>
+</section>
+
+<section class="brandstrip" aria-label="Brands Nour has worked for">
+  <div class="wrap">
+    <div class="eyebrow">Brands I've worked for</div>
+    <ul class="brandlist">
+      <li>Brunello Cucinelli</li>
+      <li>Celine</li>
+      <li>Sandro and Maje</li>
+      <li>Canada Goose</li>
+      <li>Club Monaco</li>
+    </ul>
   </div>
 </section>
 
@@ -372,8 +390,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div>
       <div class="eyebrow">About</div>
       <h2>Hi, I'm Nour.</h2>
-      <p>I've spent my career on the shop floor of some of the world's best brands, as a store director at:</p>
-      <p class="brands">Brunello Cucinelli · Celine · Sandro and Maje · Canada Goose · Club Monaco</p>
+      <p>I've spent my career on the shop floor of some of the world's best brands, as a store director at Brunello Cucinelli, Celine, Sandro and Maje, Canada Goose and Club Monaco.</p>
       <p>From quiet luxury to high-volume premium, I've opened stores, built teams, hosted VIP clients and hit the numbers. What I love most is developing people: the associate who becomes a top seller, the key holder who becomes a manager.</p>
     </div>
     <div>
