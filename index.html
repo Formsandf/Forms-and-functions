@@ -190,9 +190,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media (max-width:900px){.addon-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.addon-grid{grid-template-columns:1fr}}
 .about .wrap{display:block}
-.about-cols{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:12px;align-items:start}
-.about-cols p{max-width:none}
-@media (max-width:900px){.about-cols{grid-template-columns:1fr;gap:0}}
+.about-statement{font-size:clamp(36px,5vw,64px);line-height:1.08;max-width:980px;margin-top:20px}
+.about-statement em{font-style:italic;color:var(--accent)}
+.about-brands{display:flex;align-items:baseline;gap:32px;margin-top:56px;padding:22px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.about-role{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;white-space:nowrap}
+.about-brands ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 0;margin:0;padding:0}
+.about-brands li{font-family:var(--serif);font-size:24px;color:var(--ink);white-space:nowrap}
+.about-brands li+li::before{content:"\00B7";margin:0 16px;color:var(--accent)}
+.about .about-body{max-width:720px;margin-top:40px}
+.about .about-body p{font-size:19px;line-height:1.7;max-width:none;margin-top:16px}
+.about .about-body p:first-child{margin-top:0}
+.about .about-body p+p{color:var(--ink);font-weight:500}
+@media (max-width:700px){.about-brands{flex-direction:column;gap:12px}.about-brands ul{flex-direction:column;gap:4px}.about-brands li{font-size:22px}.about-brands li+li::before{content:none}}
 /* brand strip */
 .brandstrip{padding:56px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface);text-align:center}
 .brandstrip .eyebrow{margin-bottom:28px}
@@ -390,18 +399,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section class="about" id="about">
   <div class="wrap">
-    <div class="about-head">
-      <div class="eyebrow">About</div>
-      <h2>Hi, I'm Nour.</h2>
+    <div class="eyebrow">About Nour</div>
+    <h2 class="about-statement">I've run stores for the most demanding names in luxury. <em>Now I run yours.</em></h2>
+    <div class="about-brands">
+      <span class="about-role">Store Director</span>
+      <ul>
+        <li>Brunello Cucinelli</li>
+        <li>Celine</li>
+        <li>Sandro &amp; Maje</li>
+        <li>Canada Goose</li>
+        <li>Club Monaco</li>
+      </ul>
     </div>
-    <div class="about-cols">
-      <div>
-        <p>Luxury retail is built on discipline. I learned it running stores for Brunello Cucinelli, Celine, Sandro and Maje, Canada Goose and Club Monaco.</p>
-        <p>Merchandising, buying, clienteling, selling, leadership and the VIP experience: I've owned every one, and I know how they drive each other.</p>
-      </div>
-      <div>
-        <p>Now I bring that standard to retailers building something of their own. Direct, hands-on, and accountable for results.</p>
-      </div>
+    <div class="about-body">
+      <p>I don't advise from the outside. I've been accountable for the entire store: the product on the floor, the buy behind it, the clients who come back, the team that sells and the number at the end of every month.</p>
+      <p>That is the standard I bring to your business. One person, the whole operation, no gaps.</p>
     </div>
   </div>
 </section>
