@@ -190,6 +190,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media (max-width:900px){.addon-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.addon-grid{grid-template-columns:1fr}}
 .about .wrap{display:block}
+.about-teaser{font-size:clamp(34px,4.6vw,58px);max-width:900px;margin-top:18px}
+.about-teaser em{font-style:italic;color:var(--accent)}
+.about .about-teaser-p{max-width:640px;margin:22px 0 32px;font-size:18px}
 .about-cols{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:12px;align-items:start}
 .about-cols p{max-width:none}
 @media (max-width:900px){.about-cols{grid-template-columns:1fr;gap:0}}
@@ -209,7 +212,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <nav>
       <a href="#approach">How we work</a>
       <a href="#packages">Packages</a>
-      <a href="#about">About</a>
+      <a href="about.html">About</a>
       <a href="#contact" class="btn">Consultation</a>
     </nav>
   </div>
@@ -390,19 +393,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section class="about" id="about">
   <div class="wrap">
-    <div class="about-head">
-      <div class="eyebrow">About</div>
-      <h2>Hi, I'm Nour.</h2>
-    </div>
-    <div class="about-cols">
-      <div>
-        <p>Luxury retail is built on discipline. I learned it running stores for Brunello Cucinelli, Celine, Sandro and Maje, Canada Goose and Club Monaco.</p>
-        <p>Merchandising, buying, clienteling, selling, leadership and the VIP experience: I've owned every one, and I know how they drive each other.</p>
-      </div>
-      <div>
-        <p>Now I bring that standard to retailers building something of their own. Direct, hands-on, and accountable for results.</p>
-      </div>
-    </div>
+    <div class="eyebrow">About Nour</div>
+    <h2 class="about-teaser">I don't take no for an answer. <em>Neither should your store.</em></h2>
+    <p class="about-teaser-p">Former store director at Brunello Cucinelli, Celine, Sandro &amp; Maje, Canada Goose and Club Monaco. Now bringing luxury standards to independent boutiques and new designers.</p>
+    <a href="about.html" class="btn ghost">Read my story</a>
   </div>
 </section>
 

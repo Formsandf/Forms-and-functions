@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Nour | Forms and Functions</title>
+<meta name="description" content="Nour, founder of Forms and Functions: former luxury store director at Brunello Cucinelli, Celine, Sandro and Maje, Canada Goose and Club Monaco, now helping independent boutiques and new designers.">
+<meta property="og:title" content="Forms and Functions | Build your store the way luxury houses do">
+<meta property="og:description" content="Retail consulting from a former store director at Brunello Cucinelli, Celine, Sandro and Maje, Canada Goose and Club Monaco.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F1EA;
+  --surface:#FBF9F5;
+  --ink:#1B1A18;
+  --muted:#5F5850;
+  --line:#DDD5C9;
+  --accent:#8C5B3C;
+  --accent-ink:#FBF9F5;
+  --deep:#1E2A2C;
+  --deep-ink:#EFE9DF;
+  --deep-muted:#A9B1AE;
+  --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --sans:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:clamp(44px,7vw,84px)}
+h2{font-size:clamp(34px,4.6vw,54px)}
+h3{font-size:28px}
+p.lead{font-size:clamp(18px,2vw,21px);color:var(--muted);max-width:620px}
+.btn{display:inline-block;background:var(--ink);color:var(--surface);text-decoration:none;font-weight:500;font-size:15px;padding:15px 28px;border-radius:2px;letter-spacing:.02em;transition:background .2s}
+.btn:hover{background:var(--accent)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--surface)}
+.btn.light{background:var(--deep-ink);color:var(--deep)}
+.btn.light:hover{background:var(--accent);color:var(--accent-ink)}
+section{padding:112px 0}
+.rule{border:0;border-top:1px solid var(--line)}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:10;background:rgba(245,241,234,.92);backdrop-filter:blur(8px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.nav.scrolled{border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:var(--serif);font-size:24px;text-decoration:none;letter-spacing:.01em}
+.logo em{font-style:italic;color:var(--accent)}
+.nav nav{display:flex;gap:32px;align-items:center}
+.nav nav a{text-decoration:none;font-size:14px;color:var(--muted)}
+.nav nav a:hover{color:var(--ink)}
+.nav nav a.btn{color:var(--surface);padding:10px 18px;font-size:14px}
+@media (max-width:820px){.nav nav a:not(.btn){display:none}}
+
+/* hero */
+.hero{padding:96px 0 120px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:end}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero p.lead{margin:28px 0 40px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-card{border-left:1px solid var(--line);padding-left:32px}
+.hero-card .big{font-family:var(--serif);font-size:30px;line-height:1.2;font-style:italic}
+.hero-card .small{margin-top:18px;font-size:14px;color:var(--muted)}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:48px}.hero-card{border-left:0;border-top:1px solid var(--line);padding:28px 0 0}}
+
+/* problem */
+.problem{background:var(--bg);border-bottom:1px solid var(--line)}
+.problem .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.problem p{color:var(--muted);margin-bottom:18px}
+.problem p strong{color:var(--ink);font-weight:500}
+@media (max-width:900px){.problem .wrap{grid-template-columns:1fr;gap:28px}}
+
+/* form & function */
+.ff-head{max-width:720px;margin-bottom:64px}
+.ff-head h2{margin-top:14px}
+.ff{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--ink)}
+.ff > div{padding:44px 48px 8px 0}
+.ff > div + div{padding-left:48px;border-left:1px solid var(--line)}
+.ff .num{font-family:var(--serif);font-size:15px;color:var(--accent);font-style:italic}
+.ff h3{font-size:44px;margin:10px 0 6px}
+.ff .sub{font-size:15px;color:var(--muted);margin-bottom:18px;font-style:italic;font-family:var(--serif);font-size:21px}
+.ff p{color:var(--muted)}
+@media (max-width:820px){.ff{grid-template-columns:1fr}.ff > div + div{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+
+/* packages */
+.packages{background:var(--deep);color:var(--deep-ink)}
+.packages .eyebrow{color:#D3A47E}
+.packages .ff-head p{color:var(--deep-muted);margin-top:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid rgba(239,233,223,.18);padding:40px 32px;display:flex;flex-direction:column;position:relative}
+.card.featured{background:var(--deep-ink);color:var(--deep);border-color:var(--deep-ink)}
+.card .tag{position:absolute;top:-12px;left:32px;background:#D3A47E;color:var(--deep);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:4px 10px}
+.card .kind{font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.7}
+.card h3{font-size:34px;margin:12px 0 10px}
+.card .price{font-family:var(--serif);font-size:24px;margin-bottom:6px}
+.card .price span{font-size:15px;opacity:.7;font-family:var(--sans)}
+.card .desc{opacity:.8;font-size:15px;margin:10px 0 24px}
+.card ul{list-style:none;border-top:1px solid currentColor;border-color:rgba(127,127,127,.3);padding-top:20px;flex:1}
+.card li{font-size:15px;padding:7px 0 7px 22px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:16px;width:10px;height:1px;background:currentColor;opacity:.6}
+.card .btn{margin-top:28px;text-align:center}
+.card:not(.featured) .btn{background:transparent;border:1px solid rgba(239,233,223,.5);color:var(--deep-ink)}
+.card:not(.featured) .btn:hover{background:var(--deep-ink);color:var(--deep)}
+.extras{margin-top:36px;color:var(--deep-muted);font-size:15px;text-align:center}
+@media (max-width:960px){.cards{grid-template-columns:1fr;max-width:520px}}
+
+/* how */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:1px solid var(--ink)}
+.step{padding:32px 28px 0 0}
+.step + .step{padding-left:28px;border-left:1px solid var(--line)}
+.step .n{font-family:var(--serif);font-size:56px;line-height:1;color:var(--accent);font-style:italic}
+.step h4{font-family:var(--serif);font-weight:500;font-size:24px;margin:18px 0 8px}
+.step p{font-size:15px;color:var(--muted)}
+.how-cta{margin-top:56px}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}.step:nth-child(3){padding-left:0;border-left:0}.step{padding-bottom:28px}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}.step + .step{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+
+/* who */
+.who{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.who .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px}
+.who ul{list-style:none}
+.who li{padding:22px 0;border-bottom:1px solid var(--line)}
+.who li:first-child{border-top:1px solid var(--line)}
+.who li strong{display:block;font-family:var(--serif);font-weight:500;font-size:24px;margin-bottom:4px}
+.who li span{color:var(--muted);font-size:15px}
+@media (max-width:900px){.who .wrap{grid-template-columns:1fr;gap:32px}}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:center}
+.portrait{aspect-ratio:4/5;background:linear-gradient(160deg,#E6DDD0,#CDBFAE);display:flex;align-items:flex-end;padding:24px;font-family:var(--serif);font-style:italic;font-size:20px;color:#6B5E50}
+.about p{color:var(--muted);margin-top:18px;max-width:560px}
+.about h2{margin-top:14px}
+@media (max-width:900px){.about .wrap{grid-template-columns:1fr;gap:36px}.portrait{max-width:360px}}
+
+/* contact */
+.contact{background:var(--deep);color:var(--deep-ink);text-align:center}
+.contact .eyebrow{color:#D3A47E}
+.contact h2{max-width:760px;margin:16px auto 20px}
+.contact p{color:var(--deep-muted);max-width:560px;margin:0 auto 36px}
+.contact .email{margin-top:22px;font-size:14px;color:var(--deep-muted)}
+.contact .email a{color:var(--deep-ink)}
+form.note{max-width:620px;margin:64px auto 0;text-align:left;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form.note h3{grid-column:1/-1;font-size:26px;margin-bottom:6px;text-align:center}
+form.note label{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--deep-muted);display:flex;flex-direction:column;gap:6px}
+form.note label.full{grid-column:1/-1}
+form.note input,form.note textarea{font:inherit;font-size:16px;color:var(--deep-ink);background:transparent;border:1px solid rgba(239,233,223,.28);padding:12px 14px;border-radius:2px;text-transform:none;letter-spacing:0}
+form.note input:focus,form.note textarea:focus{outline:none;border-color:#D3A47E}
+form.note textarea{min-height:110px;resize:vertical}
+form.note button{grid-column:1/-1;justify-self:center;border:0;cursor:pointer;margin-top:8px}
+form.note .status{grid-column:1/-1;text-align:center;font-size:14px;color:#D3A47E;min-height:20px}
+@media (max-width:600px){form.note{grid-template-columns:1fr}}
+
+
+.cards.four{grid-template-columns:repeat(4,1fr);gap:16px}
+.cards.four .card{padding:36px 24px}
+.cards.four .card h3{font-size:30px}
+.cards.four .card li{font-size:14px}
+.cards.four .card .tag{left:24px}
+@media (max-width:1100px){.cards.four{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.cards.four{grid-template-columns:1fr}}
+.compare-wrap{margin-top:56px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.compare{width:100%;min-width:560px;border-collapse:collapse;font-size:14px}
+.compare th,.compare td{padding:13px 12px;text-align:center;border-bottom:1px solid rgba(239,233,223,.14)}
+.compare th:first-child,.compare td:first-child{text-align:left;color:var(--deep-ink)}
+.compare th{font-family:var(--serif);font-weight:500;font-size:19px;color:var(--deep-ink)}
+.compare td{color:var(--deep-muted)}
+.compare .hl{background:rgba(239,233,223,.07);color:var(--deep-ink)}
+.steps .step .n{font-size:40px}
+footer{padding:40px 0;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:600px){section{padding:80px 0}.wrap{padding:0 16px}.hero{padding:64px 0 88px}}
+
+/* add-ons */
+.addons{margin-top:64px;border-top:1px solid rgba(239,233,223,.18);padding-top:40px}
+.addons h3{font-size:30px;margin-bottom:8px}
+.addons > p{color:var(--deep-muted);font-size:15px;margin-bottom:24px}
+.addon-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px}
+.addon{padding:16px 0;border-bottom:1px solid rgba(239,233,223,.14)}
+.addon strong{display:block;font-family:var(--serif);font-weight:500;font-size:21px;color:var(--deep-ink)}
+.addon span{display:block;font-size:14px;color:var(--deep-muted)}
+.addon .p{color:#D3A47E;margin-top:2px}
+@media (max-width:900px){.addon-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.addon-grid{grid-template-columns:1fr}}
+.about .wrap{display:block}
+.about-cols{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:12px;align-items:start}
+.about-cols p{max-width:none}
+@media (max-width:900px){.about-cols{grid-template-columns:1fr;gap:0}}
+/* brand strip */
+.brandstrip{padding:56px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface);text-align:center}
+.brandstrip .eyebrow{margin-bottom:28px}
+.brandlist{list-style:none;display:flex;justify-content:center;flex-wrap:wrap;align-items:center;gap:14px 56px;max-width:1000px;margin:0 auto}
+.brandlist li{font-family:var(--serif);font-size:clamp(19px,2vw,24px);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);line-height:1.3}
+@media (max-width:600px){.brandstrip{padding:44px 0}.brandlist{flex-direction:column;gap:0}.brandlist li{padding:12px 0;width:100%;max-width:280px}.brandlist li + li{border-top:1px solid var(--line)}}
+
+/* About page */
+.ab-hero{padding:120px 0 96px}
+.ab-hero h1{font-size:clamp(44px,6.6vw,92px);max-width:1040px;margin-top:22px}
+.ab-hero h1 em{font-style:italic;color:var(--accent)}
+.ab-hero .lead{margin-top:32px;max-width:640px}
+.ab-roles{border-top:1px solid var(--ink);border-bottom:1px solid var(--line);padding:26px 0;display:flex;align-items:baseline;gap:36px;margin-top:72px}
+.ab-roles .label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;white-space:nowrap}
+.ab-roles ul{list-style:none;display:flex;flex-wrap:wrap;margin:0;padding:0}
+.ab-roles li{font-family:var(--serif);font-size:24px;white-space:nowrap}
+.ab-roles li+li::before{content:"\00B7";color:var(--accent);margin:0 16px}
+.ab-split{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start}
+.ab-split h2{margin-top:14px}
+.ab-split .body p{color:var(--muted);font-size:18px;line-height:1.75;margin-top:18px}
+.ab-split .body p:first-child{margin-top:0}
+.ab-quote{background:var(--deep);color:var(--deep-ink);padding:120px 0;text-align:center}
+.ab-quote blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(34px,4.6vw,60px);line-height:1.15;max-width:900px;margin:0 auto}
+.ab-quote cite{display:block;margin-top:28px;font-style:normal;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#D3A47E}
+.ab-traits{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);margin-top:56px}
+.ab-traits > div{padding:36px 36px 0 0}
+.ab-traits > div + div{padding-left:36px;border-left:1px solid var(--line)}
+.ab-traits .n{font-family:var(--serif);font-style:italic;color:var(--accent);font-size:20px}
+.ab-traits h3{font-size:34px;margin:10px 0 12px}
+.ab-traits p{color:var(--muted)}
+.ab-why{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ab-why .body p strong{color:var(--ink);font-weight:500}
+.ab-close{text-align:center;padding:128px 0}
+.ab-close h2{max-width:820px;margin:0 auto}
+.ab-close p{color:var(--muted);max-width:560px;margin:22px auto 36px;font-size:18px}
+@media (max-width:900px){.ab-split{grid-template-columns:1fr;gap:28px}.ab-traits{grid-template-columns:1fr}.ab-traits > div + div{padding-left:0;border-left:0;border-top:1px solid var(--line)}.ab-traits > div{padding:28px 0}}
+@media (max-width:700px){.ab-hero{padding:72px 0 64px}.ab-roles{flex-direction:column;gap:12px}.ab-roles ul{flex-direction:column;gap:4px}.ab-roles li+li::before{content:none}.ab-quote{padding:88px 0}.ab-close{padding:88px 0}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap">
+    <a href="index.html" class="logo">Forms <em>&amp;</em> Functions</a>
+    <nav>
+      <a href="index.html#approach">How we work</a>
+      <a href="index.html#packages">Packages</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="index.html#contact" class="btn">Consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="ab-hero">
+  <div class="wrap">
+    <div class="eyebrow">About Nour</div>
+    <h1>I don't take no for an answer. <em>Neither should your store.</em></h1>
+    <p class="lead">Former luxury store director. Known for one thing above all: executing, and delivering results, consistently.</p>
+    <div class="ab-roles">
+      <span class="label">Store Director</span>
+      <ul>
+        <li>Brunello Cucinelli</li>
+        <li>Celine</li>
+        <li>Sandro &amp; Maje</li>
+        <li>Canada Goose</li>
+        <li>Club Monaco</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="ab-story">
+  <div class="wrap ab-split">
+    <div>
+      <div class="eyebrow">Where I come from</div>
+      <h2>Built on the floors of the world's most demanding houses.</h2>
+    </div>
+    <div class="body">
+      <p>I've led stores for Brunello Cucinelli, Celine, Sandro &amp; Maje, Canada Goose and Club Monaco, and supported locations across brands beyond my own.</p>
+      <p>My proudest chapter is Brunello Cucinelli. At one of the highest price points in luxury, nothing is given. Every client relationship is built, every sale is earned, and every detail of the store has to be right. I delivered there.</p>
+      <p>That is where I learned what really drives a store: product the team believes in, service clients come back for, and a team held to a standard, every single day.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ab-quote">
+  <div class="wrap">
+    <blockquote>"At that price point, nothing is given. Everything is earned."</blockquote>
+    <cite>Nour, Founder</cite>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">What I'm known for</div>
+    <h2 style="margin-top:14px;max-width:760px">Execution. Results. Resilience.</h2>
+    <div class="ab-traits">
+      <div><div class="n">i.</div><h3>Execution</h3><p>Plans are easy. I make them happen, on the floor, with the team, every day.</p></div>
+      <div><div class="n">ii.</div><h3>Consistent results</h3><p>Not one good season. Performance that holds, month after month.</p></div>
+      <div><div class="n">iii.</div><h3>Resilience</h3><p>I don't take no for an answer, and I don't give up. Not on a client, not on a team, not on a target.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="ab-why">
+  <div class="wrap ab-split">
+    <div>
+      <div class="eyebrow">Why Forms and Functions</div>
+      <h2>The big houses have already made it. You haven't yet.</h2>
+    </div>
+    <div class="body">
+      <p>The great fashion houses have the teams, the budgets and the head offices. They don't need me.</p>
+      <p><strong>Independent boutiques and new designers do.</strong> Beautiful pieces, real craftsmanship and genuine service, yet they rarely get the spotlight, and rarely have someone showing the world what they do best.</p>
+      <p>I started Forms and Functions to change that: to bring the standards of luxury retail to the brands that deserve to be seen, and to help them build stores that look the part and perform like it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ab-close">
+  <div class="wrap">
+    <div class="eyebrow">Let's talk</div>
+    <h2 style="margin-top:14px">This industry is my passion. Now it works for you.</h2>
+    <p>I could talk about retail for hours. Let's start with thirty minutes about your store.</p>
+    <a href="mailto:nour@formsandfunctions.ca?subject=Store%20consultation" class="btn">Book a consultation</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Forms and Functions · Retail consulting · Toronto, Canada · <a href="mailto:nour@formsandfunctions.ca">nour@formsandfunctions.ca</a></span>
+    <span>© 2026 Forms and Functions</span>
+  </div>
+</footer>
+
+<script>
+(function(){var nav=document.querySelector('header.nav');addEventListener('scroll',function(){nav.classList.toggle('scrolled',scrollY>8)},{passive:true});})();
+</script>
+</body>
+</html>
