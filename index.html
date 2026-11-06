@@ -189,7 +189,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .addon .p{color:#D3A47E;margin-top:2px}
 @media (max-width:900px){.addon-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.addon-grid{grid-template-columns:1fr}}
-.about .wrap{align-items:start}
+.about .wrap{display:block}
+.about-cols{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:12px;align-items:start}
+.about-cols p{max-width:none}
+@media (max-width:900px){.about-cols{grid-template-columns:1fr;gap:0}}
 /* brand strip */
 .brandstrip{padding:56px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface);text-align:center}
 .brandstrip .eyebrow{margin-bottom:28px}
@@ -387,15 +390,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section class="about" id="about">
   <div class="wrap">
-    <div>
+    <div class="about-head">
       <div class="eyebrow">About</div>
       <h2>Hi, I'm Nour.</h2>
-      <p>I've spent my career on the shop floor of some of the world's best brands, as a store director at Brunello Cucinelli, Celine, Sandro and Maje, Canada Goose and Club Monaco.</p>
-      <p>From quiet luxury to high-volume premium, I've opened stores, built teams, hosted VIP clients and hit the numbers. What I love most is developing people: the associate who becomes a top seller, the key holder who becomes a manager.</p>
     </div>
-    <div>
-      <p>Forms and Functions brings that experience to people starting out in retail. You get the standards of a luxury house, without the head office.</p>
-      <p>I take on a small number of clients at a time, so every store gets direct, hands-on attention. When you need more, I bring in people I trust from across the industry.</p>
+    <div class="about-cols">
+      <div>
+        <p>I've spent my career running stores for some of the world's best brands, as a store director at Brunello Cucinelli, Celine, Sandro and Maje, Canada Goose and Club Monaco.</p>
+        <p>From quiet luxury to high-volume premium, I've run the whole show: the floor, the product, the clients, the team and the numbers. In a great store none of these work alone. Merchandising, buying, clienteling, sales, people and VIP moments all move together.</p>
+      </div>
+      <div>
+        <p>Forms and Functions brings that experience to people starting out in retail. You get the standards of a luxury house, without the head office.</p>
+        <p>I take on a small number of clients at a time, so every store gets direct, hands-on attention. When you need more, I bring in people I trust from across the industry.</p>
+      </div>
     </div>
   </div>
 </section>
